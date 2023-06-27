@@ -1,6 +1,6 @@
 # Tampermonkey-Scripts
 > 网页脚本收集
-## 1.解决网页中文字无法选中的问题
+## 1.解除网页文字无法选中
 1. 浏览器打开目标界面，按下F12
 
 2. 在Console命令行中输入以下代码：
@@ -11,4 +11,7 @@ for (var i = 0; i < eles.length; i++) {
 }
 ```
 3. 再按下F12退出命令模式，返回原界面，就可以选中文字了
-## 2.编辑整个网页
+## 2.实现网页内容可编辑
+```javascript
+document.body.contentEditable='true'
+```
